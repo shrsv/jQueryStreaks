@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
-<body>
-<title>Building a streak app</title>
-<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="jcanvas.min.js"></script>
+    </head>
+    <body>
+        <title>Building a streak app</title>
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
 
-<script>
+        <script>
+//        var c = document.getElementById("myCanvas");
+//        var ctx = c.getContext("2d");
+//        ctx.beginPath();
+//        ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+//        ctx.stroke();
+// Draw a circle on the canvas
+$('canvas').drawArc({
+  fillStyle: 'blue',
+  x: 75, y: 150,
+  radius: 50
+});
+        </script>
 
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-ctx.stroke();
-
-</script>
-
-</body>
+    </body>
 </html>
