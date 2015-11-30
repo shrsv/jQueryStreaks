@@ -1,2 +1,2 @@
 # jQueryStreaks
-what is this, i do not know yet.
+what this is, i do not know yet.
