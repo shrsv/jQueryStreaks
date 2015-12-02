@@ -6,24 +6,10 @@
     </head>
     <body>
         <title>Building a streak app</title>
-        <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+        <canvas id="myCanvas" width="1024" height="768" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
 
-        <script>
-$('canvas').drawArc({
-    layer: true,
-    fillStyle: 'blue',
-    x: 50, y: 50,
-    radius: 50,
-    click: function(layer) {
-        console.log("blah");
-        console.log(layer);
-        $(this).animateLayer(layer, {
-            fillStyle: 'green'
-        }, 'slow');
-      }
-});
-        </script>
+        <script src="js.js"></script>
 
     </body>
 </html>
