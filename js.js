@@ -9,7 +9,6 @@ while (num < 31) {
         x: start + num*shift, y: 50,
         radius: 50,
         click: function(layer) {
-            console.log("blah");
             console.log(layer);
             if (layer.fillStyle == 'rgb( 0,0,255 )') {
                 $(this).animateLayer(layer, {
@@ -23,5 +22,14 @@ while (num < 31) {
             }
           }
     });
+  $('canvas').drawText({
+  fillStyle: '#9cf',
+  strokeStyle: '#25a',
+  strokeWidth: 2,
+  x: start + num*shift, y: 50,
+  fontSize: 48,
+  fontFamily: 'Verdana, sans-serif',
+  text: num+1
+});;
     num = num + 1;
 }
